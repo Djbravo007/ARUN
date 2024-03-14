@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url("BG.jpg");
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-style:initial;
+    
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: none;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  nav ul li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .logo {
+    max-width: 30px; 
+    margin-right: 70px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .logo:hover{
+    background-color:darkcyan;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+    height: 45px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header ul {
+    display:flex;
+  }
+  
+  header li {
+    padding: 0 20px;
+  }
+  
+  /* ARUN section */
+  #ARUN {
+    background-image: url("arun-image.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:aliceblue;
+    padding: 0 20px;
+  }
+  
+  #ARUN h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #ARUN p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  #ARUN a {
+    background-color: #f1c40f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-right: 20px;
+    border-style: double;
+    border-color: #000;
+    display: inline-block;
+  }
+
+  #ARUN a:hover{
+    background-color: #ccc;
+    color: #000;
+  }
+
+
+  
+  #ARUN a:last-child {
+    margin-right: 0;
+  }
+  
+  /* About section */
+  #about {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #about p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #about img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 10px solid #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Course section */
+  #course {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  #course h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #course ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
+  }
+  
+  #course li {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    width: calc(33.333% - 20px);
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #course li:hover{
+    background-color: oldlace;
+  }
+  
+  #course li:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  
+  #course li:nth-child(3n+2) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #course li:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  
+  #course p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #course a {
+    background-color: #f1c40f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 40px;
+    border-style: double;
+  
+  }
+  
+  #course a:hover{
+    color: #000;
+    background-color: #ccc;
+  }
+  
+  /* Testimonials section */
+  #testimonials {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    font-style: italic;
+  }
+
+  
+  #testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p:last-child {
+    font-style: italic;
+  }
+  
+  /* Contact section */
+  #contact {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #contact form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #contact label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  #contact textarea {
+    height: 200px;
+  }
+  
+  #contact button {
+    background-color: #f1c40f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    display: inline-block;
+  }
+
+  #contact button:hover{
+    color: #000;
+    background-color: #ccc;
+    
+  }
+#social-media {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+#social-media a {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #343a40;
+    transition: all 0.3s ease;
+}
+
+#social-media a:hover {
+    color: #007bff;
+}
+
+#fab {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
